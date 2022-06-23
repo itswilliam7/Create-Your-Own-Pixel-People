@@ -92,13 +92,3 @@ function download() {
   download.setAttribute("href", image);
   //download.setAttribute("download","archive.png");
   }
-
-
-function download_image(){
-  var canvas = document.getElementById("canvas");
-  image = canvas.toDataURL("image/png").replace("image/png", "image/octet-stream");
-  var link = document.createElement('a');
-  link.download = "my-image.png";
-  link.href = image;
-  link.click();
-}
