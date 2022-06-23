@@ -80,3 +80,25 @@ shirt.addEventListener('change', function () {
     context.drawImage(imageObj, 0, 0, canvas.width, canvas.height);
   };
 });
+
+document.getElementById('clear').addEventListener('click', function () {
+  context.clearRect(0, 0, canvas.width, canvas.height);
+}, false);
+
+function download() {
+  var download = document.getElementById("download");
+  var image = document.getElementById("canvas").toDataURL("image/png")
+      .replace("image/png", "image/octet-stream");
+  download.setAttribute("href", image);
+  //download.setAttribute("download","archive.png");
+  }
+
+
+function download_image(){
+  var canvas = document.getElementById("canvas");
+  image = canvas.toDataURL("image/png").replace("image/png", "image/octet-stream");
+  var link = document.createElement('a');
+  link.download = "my-image.png";
+  link.href = image;
+  link.click();
+}
