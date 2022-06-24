@@ -85,10 +85,44 @@ document.getElementById('clear').addEventListener('click', function () {
   context.clearRect(0, 0, canvas.width, canvas.height);
 }, false);
 
-function download() {
-  var download = document.getElementById("download");
-  var image = document.getElementById("canvas").toDataURL("image/png")
-      .replace("image/png", "image/octet-stream");
-  download.setAttribute("href", image);
-  //download.setAttribute("download","archive.png");
+// Initializing
+window.onload = function(){
+  var dwn = document.getElementById('download-button'),
+      canvas = document.getElementById('canvas'),
+      context = canvas.getContext('2d');
+
+  // Event handler for download
+  dwn.onclick = function(){
+    download(canvas, 'myimage.png');
   }
+
+}
+
+
+// Source from:  http://stackoverflow.com/questions/18480474/how-to-save-an-image-from-canvas
+
+/* Canvas Donwload */
+function download(canvas, filename) {
+  /// create an "off-screen" anchor tag
+  var lnk = document.createElement('a'), e;
+
+  /// the key here is to set the download attribute of the a tag
+  lnk.download = filename;
+
+  /// convert canvas content to data-uri for link. When download
+  /// attribute is set the content pointed to by link will be
+  /// pushed as "download" in HTML5 capable browsers
+  lnk.href = canvas.toDataURL("image/png;base64");
+
+  /// create a "fake" click-event to trigger the download
+  if (document.createEvent) {
+    e = document.createEvent("MouseEvents");
+    e.initMouseEvent("click", true, true, window,
+                     0, 0, 0, 0, 0, false, false, false,
+                     false, 0, null);
+
+    lnk.dispatchEvent(e);
+  } else if (lnk.fireEvent) {
+    lnk.fireEvent("onclick");
+  }
+}
