@@ -8,79 +8,52 @@ var glasses = document.getElementById("glasses");
 var head = document.getElementById("head");
 var shirt = document.getElementById("shirt");
 
-
-// backgroundDropdown.onchange = function(event){
-//    alert("Your background is " + backgroundDropdown.value + "!");    
-// }
-
 let canvas = document.getElementById('canvas');
 let context = canvas.getContext('2d');
-let imageObj = new Image();
 
-background.addEventListener('change', function () {
-  imageObj.src = this.options[this.selectedIndex].dataset.img;
-  imageObj.onload = function() {
-    context.clearRect(0, 0, canvas.width, canvas.height);
-    context.drawImage(imageObj, 0, 0, canvas.width, canvas.height);
-  };
-});
+const createImage = function(source) {
+  const tempImg = new Image();
+  tempImg.src = source;
+  return tempImg;
+}
 
-skin.addEventListener('change', function () {
-  imageObj.src = this.options[this.selectedIndex].dataset.img;
-  imageObj.onload = function() {
-    context.drawImage(imageObj, 0, 0, canvas.width, canvas.height);
-  };
-});
+const selectedValues = {
+  background: "",
+  skin: "",
+  eyes: "",
+  // ...etc
+}
 
-eyes.addEventListener('change', function () {
-  imageObj.src = this.options[this.selectedIndex].dataset.img;
-  imageObj.onload = function() {
-    context.drawImage(imageObj, 0, 0, canvas.width, canvas.height);
-  };
-});
+const backgroundImgs = {
+  yellow: createImage("https://raw.githubusercontent.com/itswilliam7/pixel-people-image-layers/master/Background/common/Yellow.png"),
+  green: createImage("https://raw.githubusercontent.com/itswilliam7/pixel-people-image-layers/master/Background/legendary/Green.png"),
+  // ...etc
+}
 
-eyebrows.addEventListener('change', function () {
-  imageObj.src = this.options[this.selectedIndex].dataset.img;
-  imageObj.onload = function() {
-    context.drawImage(imageObj, 0, 0, canvas.width, canvas.height);
-  };
-});
+const skinImgs = {
+  skin1: createImage("https://raw.githubusercontent.com/itswilliam7/pixel-people-image-layers/master/Skin/common/Skin%201.png"),
+  skin2: createImage("https://raw.githubusercontent.com/itswilliam7/pixel-people-image-layers/master/Skin/common/Skin 2.png"), // using the values you have
+  skin3: createImage("https://raw.githubusercontent.com/itswilliam7/pixel-people-image-layers/master/Skin/common/Skin 3.png")
+}
 
-mouth.addEventListener('change', function () {
-  imageObj.src = this.options[this.selectedIndex].dataset.img;
-  imageObj.onload = function() {
-    context.drawImage(imageObj, 0, 0, canvas.width, canvas.height);
-  };
-});
 
-faceitems.addEventListener('change', function () {
-  imageObj.src = this.options[this.selectedIndex].dataset.img;
-  imageObj.onload = function() {
-    context.drawImage(imageObj, 0, 0, canvas.width, canvas.height);
-  };
-});
 
-glasses.addEventListener('change', function () {
-  imageObj.src = this.options[this.selectedIndex].dataset.img;
-  imageObj.onload = function() {
-    context.drawImage(imageObj, 0, 0, canvas.width, canvas.height);
-  };
-});
-
-hat.addEventListener('change', function () {
-  imageObj.src = this.options[this.selectedIndex].dataset.img;
-  imageObj.onload = function() {
-    context.drawImage(imageObj, 0, 0, canvas.width, canvas.height);
-  };
-});
-
-shirt.addEventListener('change', function () {
-  imageObj.src = this.options[this.selectedIndex].dataset.img;
-  imageObj.onload = function() {
-    context.drawImage(imageObj, 0, 0, canvas.width, canvas.height);
-  };
-});
-
-document.getElementById('clear').addEventListener('click', function () {
+const drawFullFace = function() {
+  // first clear the canvas
   context.clearRect(0, 0, canvas.width, canvas.height);
-}, false);
+
+  // now draw background if the value exists
+  if(selectedValues.background !== "") context.drawImage(backgroundImgs[selectedValues.background], 0, 0, canvas.width, canvas.height);
+
+  // now draw skin if the value exists
+  // if(selectedValues.skin !== "") context.drawImage(skinImgs[selectedValues.skin], 0, 0, canvas.width, canvas.height);
+  console.log(skinImgs[selectedValues[skin]])
+  console.log(selectedValues[skin])
+  // ... etc
+}
+
+skin.addEventListener('change', function (event) {
+  selectedValues[skin] = event.target.value;
+  drawFullFace();
+});
+// ...etc
