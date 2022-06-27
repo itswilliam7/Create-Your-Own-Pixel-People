@@ -32,6 +32,9 @@ const selectedValues = {
 };
 
 const backgroundImgs = {
+  none: createImage(
+    "https://raw.githubusercontent.com/itswilliam7/pixel-people-image-layers/master/none.png"
+  ),
   yellow: createImage(
     "https://raw.githubusercontent.com/itswilliam7/pixel-people-image-layers/master/Background/common/Yellow.png"
   ),
@@ -56,6 +59,9 @@ const backgroundImgs = {
 };
 
 const skinImgs = {
+  none: createImage(
+    "https://raw.githubusercontent.com/itswilliam7/pixel-people-image-layers/master/none.png"
+  ),
   skin1: createImage(
     "https://raw.githubusercontent.com/itswilliam7/pixel-people-image-layers/master/Skin/common/Skin%201.png"
   ),
@@ -68,6 +74,9 @@ const skinImgs = {
 };
 
 const eyesImgs = {
+  none: createImage(
+    "https://raw.githubusercontent.com/itswilliam7/pixel-people-image-layers/master/none.png"
+  ),
   eyes1: createImage(
     "https://raw.githubusercontent.com/itswilliam7/pixel-people-image-layers/master/Eyes/common/Eyes%201.png"
   ),
@@ -83,6 +92,9 @@ const eyesImgs = {
 };
 
 const eyebrowsImgs = {
+  none: createImage(
+    "https://raw.githubusercontent.com/itswilliam7/pixel-people-image-layers/master/none.png"
+  ),
   eyebrows1: createImage(
     "https://raw.githubusercontent.com/itswilliam7/pixel-people-image-layers/master/Eyebrow/common/Eyebrows%201.png"
   ),
@@ -92,6 +104,9 @@ const eyebrowsImgs = {
 };
 
 const mouthImgs = {
+  none: createImage(
+    "https://raw.githubusercontent.com/itswilliam7/pixel-people-image-layers/master/none.png"
+  ),
   mouth1: createImage(
     "https://raw.githubusercontent.com/itswilliam7/pixel-people-image-layers/master/Mouth/common/Mouth%201.png"
   ),
@@ -104,6 +119,9 @@ const mouthImgs = {
 };
 
 const faceitemsImgs = {
+  none: createImage(
+    "https://raw.githubusercontent.com/itswilliam7/pixel-people-image-layers/master/none.png"
+  ),
   bluebandana: createImage(
     "https://raw.githubusercontent.com/itswilliam7/pixel-people-image-layers/master/Face%20items/common/Blue%20Bandana.png"
   ),
@@ -143,6 +161,9 @@ const faceitemsImgs = {
 };
 
 const glassesImgs = {
+  none: createImage(
+    "https://raw.githubusercontent.com/itswilliam7/pixel-people-image-layers/master/none.png"
+  ),
   glasses: createImage(
     "https://raw.githubusercontent.com/itswilliam7/pixel-people-image-layers/master/Glasses/common/Glasses.png"
   ),
@@ -161,6 +182,9 @@ const glassesImgs = {
 };
 
 const hatImgs = {
+  none: createImage(
+    "https://raw.githubusercontent.com/itswilliam7/pixel-people-image-layers/master/none.png"
+  ),
   hat1: createImage(
     "https://raw.githubusercontent.com/itswilliam7/pixel-people-image-layers/master/Hat/common/Hair%201.png"
   ),
@@ -212,6 +236,9 @@ const hatImgs = {
 };
 
 const shirtImgs = {
+  none: createImage(
+    "https://raw.githubusercontent.com/itswilliam7/pixel-people-image-layers/master/none.png"
+  ),
   blacksweater: createImage(
     "https://raw.githubusercontent.com/itswilliam7/pixel-people-image-layers/master/Shirt/common/Black%20Sweater.png"
   ),
