@@ -23,7 +23,7 @@
             <canvas class="canvas" id="canvas" width="640" height="640"></canvas>
             <input type="button" id="clear" value="Clear">
         </div>
-        <div>
+        <div id="right-column">
             <!-- BACKGROUND INPUT -->
             <div class="backgroundInput">
                 <label for="background">Background:</label>
@@ -31,39 +31,25 @@
                     <option value="" disabled="disabled" selected="selected">
                         Please Select
                     </option>
-                    <option
-                        data-img="https://raw.githubusercontent.com/itswilliam7/pixel-people-image-layers/master/Background/common/Yellow.png?raw=true"
-                        value="yellow">
+                    <option value="yellow">
                         Yellow
                     </option>
-                    <option
-                        data-img="https://raw.githubusercontent.com/itswilliam7/pixel-people-image-layers/master/Background/legendary/Green.png"
-                        value="green">
+                    <option value="green">
                         Green
                     </option>
-                    <option
-                        data-img="https://raw.githubusercontent.com/itswilliam7/pixel-people-image-layers/master/Background/legendary/Tan.png"
-                        value="tan">
-                        Tan
+                    <option value="tan">
+                        tan
                     </option>
-                    <option
-                        data-img="https://raw.githubusercontent.com/itswilliam7/pixel-people-image-layers/master/Background/rare/Pink.png"
-                        value="pink">
-                        Pink
+                    <option value="pink">
+                        pink
                     </option>
-                    <option
-                        data-img="https://raw.githubusercontent.com/itswilliam7/pixel-people-image-layers/master/Background/super_rare/Blue.png"
-                        value="blue">
-                        Blue
+                    <option value="blue">
+                        blue
                     </option>
-                    <option
-                        data-img="https://raw.githubusercontent.com/itswilliam7/pixel-people-image-layers/master/Background/super_rare/Dark%20Blue.png"
-                        value="darkblue">
-                        Dark Blue
+                    <option value="darkblue">
+                        darkblue
                     </option>
-                    <option
-                        data-img="https://raw.githubusercontent.com/itswilliam7/pixel-people-image-layers/master/Background/super_rare/Dark%20Pink.png"
-                        value="darkpink">
+                    <option value="darkpink">
                         Dark Pink
                     </option>
                 </select>
@@ -75,19 +61,13 @@
                     <option value="" disabled="disabled" selected="selected">
                         Please Select
                     </option>
-                    <option
-                        data-img="https://raw.githubusercontent.com/itswilliam7/pixel-people-image-layers/master/Skin/common/Skin%201.png"
-                        value="skin1">
+                    <option value="skin1">
                         Skin 1
                     </option>
-                    <option
-                        data-img="https://raw.githubusercontent.com/itswilliam7/pixel-people-image-layers/master/Skin/common/Skin%202.png"
-                        value="green">
+                    <option value="skin2">
                         Skin 2
                     </option>
-                    <option
-                        data-img="https://raw.githubusercontent.com/itswilliam7/pixel-people-image-layers/master/Skin/common/Skin%203.png"
-                        value="skin3">
+                    <option value="skin3">
                         Skin 3
                     </option>
                 </select>
@@ -99,24 +79,16 @@
                     <option value="" disabled="disabled" selected="selected">
                         Please Select
                     </option>
-                    <option
-                        data-img="https://raw.githubusercontent.com/itswilliam7/pixel-people-image-layers/master/Eyes/common/Eyes%201.png"
-                        value="eyes1">
+                    <option value="eyes1">
                         Eyes 1
                     </option>
-                    <option
-                        data-img="https://raw.githubusercontent.com/itswilliam7/pixel-people-image-layers/master/Eyes/legendary/Eyes%202.png"
-                        value="eyes2">
+                    <option value="eyes2">
                         Eyes 2
                     </option>
-                    <option
-                        data-img="https://raw.githubusercontent.com/itswilliam7/pixel-people-image-layers/master/Eyes/rare/Eyes%203.png"
-                        value="eyes3">
+                    <option value="eyes3">
                         Eyes 3
                     </option>
-                    <option
-                        data-img="https://raw.githubusercontent.com/itswilliam7/pixel-people-image-layers/master/Eyes/super_rare/Eyes%204.png"
-                        value="eyes3">
+                    <option value="eyes4">
                         Eyes 4
                     </option>
                 </select>
@@ -128,14 +100,10 @@
                     <option value="" disabled="disabled" selected="selected">
                         Please Select
                     </option>
-                    <option
-                        data-img="https://raw.githubusercontent.com/itswilliam7/pixel-people-image-layers/master/Eyebrow/common/Eyebrows%201.png"
-                        value="eyebrows1">
+                    <option value="eyebrows1">
                         Eyebrows 1
                     </option>
-                    <option
-                        data-img="https://raw.githubusercontent.com/itswilliam7/pixel-people-image-layers/master/Eyebrow/legendary/Eyebrows%202.png"
-                        value="eyebrows2">
+                    <option value="eyebrows2">
                         Eyebrows 2
                     </option>
                 </select>
@@ -157,6 +125,11 @@
                         value="mouth2">
                         Mouth 2
                     </option>
+                    <option
+                        data-img="https://raw.githubusercontent.com/itswilliam7/pixel-people-image-layers/master/Mouth/common/Mouth%203.png"
+                        value="mouth3">
+                        Mouth 3
+                    </option>
                 </select>
             </div>
             <!-- FACE ITEMS INPUT -->
@@ -166,64 +139,40 @@
                     <option value="" disabled="disabled" selected="selected">
                         Please Select
                     </option>
-                    <option
-                        data-img="https://raw.githubusercontent.com/itswilliam7/pixel-people-image-layers/master/Face%20items/common/Blue%20Bandana.png"
-                        value="bluebandana">
+                    <option value="bluebandana">
                         Blue Bandana
                     </option>
-                    <option
-                        data-img="https://raw.githubusercontent.com/itswilliam7/pixel-people-image-layers/master/Face%20items/common/Green%20Bandana.png"
-                        value="greenbandana">
+                    <option value="greenbandana">
                         Green Bandana
                     </option>
-                    <option
-                        data-img="https://raw.githubusercontent.com/itswilliam7/pixel-people-image-layers/master/Face%20items/common/Red%20Bandana.png"
-                        value="redbandana">
+                    <option value="redbandana">
                         Red Bandana
                     </option>
-                    <option
-                        data-img="https://raw.githubusercontent.com/itswilliam7/pixel-people-image-layers/master/Face%20items/common/Cigarette.png"
-                        value="cigarette">
+                    <option value="cigarette">
                         Cigarette
                     </option>
-                    <option
-                        data-img="https://raw.githubusercontent.com/itswilliam7/pixel-people-image-layers/master/Face%20items/legendary/Blunt.png"
-                        value="blunt">
+                    <option value="blunt">
                         Blunt
                     </option>
-                    <option
-                        data-img="https://raw.githubusercontent.com/itswilliam7/pixel-people-image-layers/master/Face%20items/legendary/Pipe.png"
-                        value="pipe">
+                    <option value="pipe">
                         Pipe
                     </option>
-                    <option
-                        data-img="https://raw.githubusercontent.com/itswilliam7/pixel-people-image-layers/master/Face%20items/rare/Blue%20Ski%20Mask.png"
-                        value="blueskimask">
+                    <option value="blueskimask">
                         Blue Ski Mask
                     </option>
-                    <option
-                        data-img="https://raw.githubusercontent.com/itswilliam7/pixel-people-image-layers/master/Face%20items/rare/Red%20Ski%20Mask.png"
-                        value="redskimask">
+                    <option value="redskimask">
                         Red Ski Mask
                     </option>
-                    <option
-                        data-img="https://raw.githubusercontent.com/itswilliam7/pixel-people-image-layers/master/Face%20items/rare/Scream.png"
-                        value="scream">
+                    <option value="scream">
                         Scream
                     </option>
-                    <option
-                        data-img="https://raw.githubusercontent.com/itswilliam7/pixel-people-image-layers/master/Face%20items/super_rare/Anonymous.png"
-                        value="anonymous">
+                    <option value="anonymous">
                         Anonymous
                     </option>
-                    <option
-                        data-img="https://raw.githubusercontent.com/itswilliam7/pixel-people-image-layers/master/Face%20items/super_rare/Bubble%20Gum.png"
-                        value="bubblegum">
+                    <option value="bubblegum">
                         Bubble Gum
                     </option>
-                    <option
-                        data-img="https://raw.githubusercontent.com/itswilliam7/pixel-people-image-layers/master/Face%20items/super_rare/Vape.png"
-                        value="vape">
+                    <option value="vape">
                         Vape
                     </option>
                 </select>
@@ -235,29 +184,19 @@
                     <option value="" disabled="disabled" selected="selected">
                         Please Select
                     </option>
-                    <option
-                        data-img="https://raw.githubusercontent.com/itswilliam7/pixel-people-image-layers/master/Glasses/common/Glasses.png"
-                        value="glasses">
+                    <option value="glasses">
                         Glasses
                     </option>
-                    <option
-                        data-img="https://raw.githubusercontent.com/itswilliam7/pixel-people-image-layers/master/Glasses/legendary/Blue%20Goggles.png"
-                        value="bluegoggles">
+                    <option value="bluegoggles">
                         Blue Goggles
                     </option>
-                    <option
-                        data-img="https://raw.githubusercontent.com/itswilliam7/pixel-people-image-layers/master/Glasses/rare/Purple%20Goggles.png"
-                        value="purplegoggles">
+                    <option value="purplegoggles">
                         Purple Goggles
                     </option>
-                    <option
-                        data-img="https://raw.githubusercontent.com/itswilliam7/pixel-people-image-layers/master/Glasses/super_rare/Black%20VR.png"
-                        value="blackvr">
+                    <option value="blackvr">
                         Black VR
                     </option>
-                    <option
-                        data-img="https://raw.githubusercontent.com/itswilliam7/pixel-people-image-layers/master/Glasses/super_rare/White%20VR.png"
-                        value="whitevr">
+                    <option value="whitevr">
                         White VR
                     </option>
                 </select>
@@ -269,133 +208,85 @@
                     <option value="" disabled="disabled" selected="selected">
                         Please Select
                     </option>
-                    <option
-                        data-img="https://raw.githubusercontent.com/itswilliam7/pixel-people-image-layers/master/Hat/common/Hair%201.png"
-                        value="hat1">
+                    <option value="hat1">
                         Hair 1
                     </option>
-                    <option
-                        data-img="https://raw.githubusercontent.com/itswilliam7/pixel-people-image-layers/master/Hat/common/Hair%202.png"
-                        value="hat2">
+                    <option value="hat2">
                         Hair 2
                     </option>
-                    <option
-                        data-img="https://raw.githubusercontent.com/itswilliam7/pixel-people-image-layers/master/Hat/common/Hair%203.png"
-                        value="hat3">
+                    <option value="hat3">
                         Hair 3
                     </option>
-                    <option
-                        data-img="https://raw.githubusercontent.com/itswilliam7/pixel-people-image-layers/master/Hat/common/Red%20Bandana.png"
-                        value="redbandana">
+                    <option value="redbandana">
                         Red Bandana
                     </option>
-                    <option
-                        data-img="https://raw.githubusercontent.com/itswilliam7/pixel-people-image-layers/master/Hat/common/Blue%20Bandana.png"
-                        value="bluebandana">
+                    <option value="bluebandana">
                         Blue Bandana
                     </option>
-                    <option
-                        data-img="https://raw.githubusercontent.com/itswilliam7/pixel-people-image-layers/master/Hat/common/Grean%20Bandana.png"
-                        value="greenbandana">
+                    <option value="greenbandana">
                         Green Bandana
                     </option>
-                    <option
-                        data-img="https://raw.githubusercontent.com/itswilliam7/pixel-people-image-layers/master/Hat/legendary/Black%20Beanie.png"
-                        value="blackbeanie">
+                    <option value="blackbeanie">
                         Black Beanie
                     </option>
-                    <option
-                        data-img="https://raw.githubusercontent.com/itswilliam7/pixel-people-image-layers/master/Hat/legendary/Blue%20Headset.png"
-                        value="blueheadset">
+                    <option value="blueheadset">
                         Blue Headset
                     </option>
-                    <option
-                        data-img="https://raw.githubusercontent.com/itswilliam7/pixel-people-image-layers/master/Hat/legendary/Green%20Headset.png"
-                        value="greenheadset">
+                    <option value="greenheadset">
                         Green Headset
                     </option>
-                    <option
-                        data-img="https://raw.githubusercontent.com/itswilliam7/pixel-people-image-layers/master/Hat/legendary/Red%20Headset.png"
-                        value="redheadset">
+                    <option value="redheadset">
                         Red Headset
                     </option>
-                    <option
-                        data-img="https://raw.githubusercontent.com/itswilliam7/pixel-people-image-layers/master/Hat/legendary/Top%20Hat.png"
-                        value="tophat">
+                    <option value="tophat">
                         Top Hat
                     </option>
-                    <option
-                        data-img="https://raw.githubusercontent.com/itswilliam7/pixel-people-image-layers/master/Hat/rare/Harley%20Quinn.png"
-                        value="harleyquinn">
+                    <option value="harleyquinn">
                         Harley Quinn
                     </option>
-                    <option
-                        data-img="https://raw.githubusercontent.com/itswilliam7/pixel-people-image-layers/master/Hat/rare/Heart.png"
-                        value="heart">
+                    <option value="heart">
                         Heart
                     </option>
-                    <option
-                        data-img="https://raw.githubusercontent.com/itswilliam7/pixel-people-image-layers/master/Hat/rare/Horns.png"
-                        value="horns">
+                    <option value="horns">
                         Horns
                     </option>
-                    <option
-                        data-img="https://raw.githubusercontent.com/itswilliam7/pixel-people-image-layers/master/Hat/super_rare/Crown.png"
-                        value="crown">
+                    <option value="crown">
                         Crown
                     </option>
-                    <option
-                        data-img="https://raw.githubusercontent.com/itswilliam7/pixel-people-image-layers/master/Hat/super_rare/Halo.png"
-                        value="halo">
+                    <option value="halo">
                         Halo
                     </option>
                 </select>
             </div>
-            <!-- EYEBROWS -->
-            <div class="shrtInput">
+            <!-- SHIRT -->
+            <div class="shirtInput">
                 <label for="shirt">Shirt:</label>
                 <select id="shirt">
                     <option value="" disabled="disabled" selected="selected">
                         Please Select
                     </option>
-                    <option
-                        data-img="https://raw.githubusercontent.com/itswilliam7/pixel-people-image-layers/master/Shirt/common/Black%20Sweater.png"
-                        value="blacksweater">
+                    <option value="blacksweater">
                         Black Sweater
                     </option>
-                    <option
-                        data-img="https://raw.githubusercontent.com/itswilliam7/pixel-people-image-layers/master/Shirt/common/Blue%20Sweater.png"
-                        value="bluesweater">
+                    <option value="bluesweater">
                         Blue Sweater
                     </option>
-                    <option
-                        data-img="https://raw.githubusercontent.com/itswilliam7/pixel-people-image-layers/master/Shirt/common/Green%20Sweater.png"
-                        value="greensweater">
+                    <option value="greensweater">
                         Green Sweater
                     </option>
-                    <option
-                        data-img="https://raw.githubusercontent.com/itswilliam7/pixel-people-image-layers/master/Shirt/common/Red%20Sweater.png"
-                        value="redsweater">
+                    <option value="redsweater">
                         Red Sweater
                     </option>
-                    <option
-                        data-img="https://raw.githubusercontent.com/itswilliam7/pixel-people-image-layers/master/Shirt/legendary/Black%20Hoodie.png"
-                        value="blackhoodie">
+                    <option value="blackhoodie">
                         Black Hoodie
                     </option>
-                    <option
-                        data-img="https://raw.githubusercontent.com/itswilliam7/pixel-people-image-layers/master/Shirt/legendary/Blue%20Hoodie.png"
-                        value="bluehoodie">
+                    <option value="bluehoodie">
                         Blue Hoodie
                     </option>
-                    <option
-                        data-img="https://raw.githubusercontent.com/itswilliam7/pixel-people-image-layers/master/Shirt/legendary/Green%20Hoodie.png"
-                        value="greenhoodie">
+                    <option value="greenhoodie">
                         Green Hoodie
                     </option>
-                    <option
-                        data-img="https://raw.githubusercontent.com/itswilliam7/pixel-people-image-layers/master/Shirt/legendary/Red%20Hoodie.png"
-                        value="redhoodie">
+                    <option value="redhoodie">
                         Red Hoodie
                     </option>
                 </select>
